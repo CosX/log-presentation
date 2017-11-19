@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Helsesjekker og logger</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section 
+				data-background-image="https://bujahad.files.wordpress.com/2014/09/2014-09-10t004203z_539468091_gm1ea9a0hid01_rtrmadp_3_argentina-animals.jpg"
+				style="background-color: rgba(0, 0, 0, 0.5);">
+					<h2>Helsesjekker og logger</h2>
+					<p>Hvordan temme loggebeistet og få bedre kontroll over hva som skjer i løsningene våre.</p>
+				</section>
+				<section data-background-image="https://cdn.modernfarmer.com/wp-content/uploads/2015/12/rsz_1280px-horses_pulling_sledge_loaded_with_logs_-_nara_-_285200.jpg"></section>
+				<section>
+					<h2>Dagens tungvinte, manuelle oppgave</h2>
+					<ul>
+						<li class="fragment">
+							Tar 2 timer 30 minutter
+						</li>
+						<li class="fragment">
+							Manuelt lete igjennom feilmeldinger
+						</li>
+						<li class="fragment">
+							Stikkprøver gir ikke realistiske data
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Hva ønsker vi å oppnå?</h2>
+					<ul>
+						<li class="fragment">
+							Mer nøyaktige data
+						</li>
+						<li class="fragment">
+							Gjøre utviklers jobb lettere
+						</li>
+						<li class="fragment">
+								Skape engasjement hos kunde
+							</li>
+						<li class="fragment">
+							Fokusere på det som er viktig... <span class="fragment">utvikling!</span>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Hvordan går man fra dette...</h2>
+					<img src="https://fthmb.tqn.com/Ey0nfakJ-MnLXQ6i3guj3CyNvJM=/3874x2570/filters:no_upscale()/horse-logging--bulkley-valley--british-columbia--canada--177683893-596aa8313df78c57f4a6c29c.jpg" alt="">
+				</section>
+				<section>
+					<h2>... til dette?</h2>
+					<img src="https://i.ytimg.com/vi/ZxnGGw_Z8ns/maxresdefault.jpg" alt="">
+				</section>
+				<section>
+					<h2>Loggaggregering!</h2>
+					<img src="https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAATvAAAAJDhkYjg4NDVjLTVhOGUtNGU0ZC1hYmQ5LTEyZTY0ZjllOWY0Mg.jpg" alt="">
+				</section>
+				<section>
+					<h2>Application Insights</h2>
+					<p>Verktøy fra Microsoft for å samle og søke opp logger av forskjellige varianter. <a target="_blank" href="https://analytics.applicationinsights.io/subscriptions/76cc4315-c1a6-441e-8fd2-eb6db3fbfeb2/resourcegroups/UCO/components/UCO%20AppInsights#/discover/home">Her</a> satt opp for en demokunde.</p>
+				</section>
+				<section>
+					<h2>Fra vår side</h2>
+					<p>Utvikle verktøy for visualisering av data og rapportgenerering. <a target="_blank" href="http://localhost:58144/dashboard/UCO">Demo</a>.</p>
+				</section>
+				<section>
+					<h2>Hvorfor trenger vi dette?</h2>
+					<p>Lage rapporter basert på mange tjenester. Mulighet for å legge til og fjerne tjenester over tid. Lage rapporter for data som er viktig for kunde.</p>
+				</section>
+				<section>
+					<h2>Fremover</h2>
+					<p>Generere dagens helsesjekk. Få dette inn i større løsninger. Ta i bruk som internt verktøy!</p>
+				</section>
+				<section>
+					<h2>Spørsmål?</h2>
+				</section>
+				<section 
+				data-background-image="https://i.ytimg.com/vi/C5q8q9wkx-o/maxresdefault.jpg">
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				history: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
